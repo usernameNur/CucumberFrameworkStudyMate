@@ -13,7 +13,7 @@ public class LoginPage {
 
     }
     @FindBy(css = "input[id=':r0:']")
-    public WebElement login;
+    public WebElement userName;
 
     @FindBy(css = "input[id=':r1:']")
     public WebElement password;
@@ -21,10 +21,4 @@ public class LoginPage {
     @FindBy(css = "button[type='submit']")
     public WebElement submitButton;
 
-
-    @FindBy (xpath = "//p[text()='User with email kalambekova@gmail.com not found']")
-    public WebElement invalidUserName;
-
-    @FindBy (xpath = "(//span[@class='sc-ipEyDJ jBKvvv'])[2]")
-    public WebElement passwordIsRequired;
 }
