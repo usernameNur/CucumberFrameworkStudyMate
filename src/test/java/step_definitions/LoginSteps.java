@@ -29,7 +29,7 @@ public class LoginSteps {
     @Then("Verify user is redirected to the home page")
     public void verify_user_is_redirected_to_the_home_page() throws InterruptedException {
         Thread.sleep(3000);
-        String expectedUrl = "https://codewise.studymate.us/student/courses?size=6&page=1";
+        String expectedUrl = "https://codewise.studymate.us/student/courses?size=10&page=1";
         Assert.assertEquals(expectedUrl, Driver.getDriver().getCurrentUrl());
     }
 }
